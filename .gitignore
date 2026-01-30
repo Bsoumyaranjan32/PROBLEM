@@ -19,3 +19,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# JavaScript environment files
+**/env.js
