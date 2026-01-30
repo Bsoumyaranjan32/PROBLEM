@@ -19,3 +19,7 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# JavaScript environment files
+Minions-master/env.js
+**/env.js

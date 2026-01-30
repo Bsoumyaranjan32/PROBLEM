@@ -58,6 +58,14 @@ Get your API key from [Google Cloud Console](https://console.cloud.google.com/)
 ### MongoDB URI
 Get your connection string from [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
+### JavaScript Environment File (for Minions-master)
+The Minions-master application also requires an `env.js` file:
+```bash
+cd Minions-master
+cp env.js.example env.js
+```
+Then edit `env.js` and add your Google Gemini API key.
+
 ## Troubleshooting
 - Ensure your `.env` file exists and contains valid credentials
 - Check that your MongoDB connection string is correct

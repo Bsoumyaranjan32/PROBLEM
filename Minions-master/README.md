@@ -54,12 +54,26 @@ Built for speed, aesthetics, and performance.
     ```
 
 2.  **Configure Environment**
-    Create an `env.js` file (added to .gitignore for security):
+    Copy the example environment file and add your API key:
+    ```bash
+    # If on Windows (Command Prompt):
+    copy env.js.example env.js
+    
+    # If on Windows (PowerShell):
+    Copy-Item env.js.example env.js
+    
+    # If on Mac/Linux:
+    cp env.js.example env.js
+    ```
+    
+    Then edit `env.js` and replace with your actual Gemini API key:
     ```javascript
     window.ENV = {
-      GEMINI_API_KEY: "YOUR_GEMINI_API_KEY_HERE"
+      GEMINI_API_KEY: "YOUR_ACTUAL_GEMINI_API_KEY_HERE"
     };
     ```
+    
+    Get your API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
 
 3.  **Run It**
     Simply open `index.html` in any modern browser! No build step required—it's that efficient.
