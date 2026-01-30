@@ -1,9 +1,10 @@
 # PROBLEM - Setup Guide
 
 ## Prerequisites
-- Node.js installed
+- Modern web browser (Chrome, Firefox, Safari, or Edge)
 - Google API Key (for Google services)
 - MongoDB Atlas account and connection string
+- (Optional) Local web server for development (e.g., Python's http.server or Node.js http-server)
 
 ## Installation Steps
 
@@ -13,12 +14,7 @@ git clone https://github.com/Bsoumyaranjan32/PROBLEM.git
 cd PROBLEM
 ```
 
-2. Install dependencies (if using Node.js)
-```bash
-npm install
-```
-
-3. Configure environment variables
+2. Configure environment variables
 - Copy `.env.example` to `.env`
 ```bash
 cp .env.example .env
@@ -27,14 +23,24 @@ cp .env.example .env
   - `GOOGLE_API_KEY`: Your Google API key from Google Cloud Console
   - `MONGO_URI`: Your MongoDB connection string from MongoDB Atlas
 
-4. Run the application
+3. Run the application
 ```bash
 # Navigate to the Minions-master directory
 cd Minions-master
 
-# Open index.html in your browser or run with a local server
-# If using Node.js with a server:
-node app.js
+# Option 1: Open directly in browser
+# Simply open index.html in your web browser
+
+# Option 2: Run with a local web server (recommended for testing)
+# Using Python 3:
+python3 -m http.server 8000
+# Then open http://localhost:8000 in your browser
+
+# Using Python 2:
+python -m SimpleHTTPServer 8000
+
+# Using Node.js (if you have http-server installed):
+npx http-server -p 8000
 ```
 
 ## Security Notes
